@@ -1,0 +1,81 @@
+.header
+  +padding-top(4)
+  position: fixed
+  top: 0
+  width: 100%
+  background-color: white
+  display: none
+
+  +at-breakpoint(desk)
+    display: block
+
+.header__inner
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-around
+
+.header__content
+  display: flex
+  align-items: flex-start
+  color: #999
+  font-weight: 700
+  text-transform: uppercase
+  font-size: 0.75em
+  height: 65px
+
+.header__content--left
+  @extend .header__content
+  flex: 1
+  justify-content: flex-start
+
+.header__content--center
+  @extend .header__content
+  flex: 2
+  justify-content: center
+
+.header__image
+  text-align: center
+
+.header__content--right
+  @extend .header__content
+  flex: 1
+
+.header__wrapper
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
+.header__wrapper--top
+  display: flex
+
+.header__wrapper--bottom
+
+.header__item--left
+  margin-right: 15px
+
+.header__item--right
+  margin-left: 15px
+
+.header__search
+  +margin-top(1)
+  color: black
+  font-weight: 300
+  display: flex
+  justify-content: flex-end
+
+.header__search--center
+  @extend .header__search
+  +margin-top(0)
+  width: 60%
+  justify-content: center
+
+.header__search__label
+  flex: 1
+  align-self: center
+  +padding-left(1)
+
+.header__search__input
+  flex: 10
+  +padding(0.6)
+  transition: all 0.5s

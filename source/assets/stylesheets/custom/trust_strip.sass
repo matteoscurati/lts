@@ -1,0 +1,22 @@
+.trust_strip
+  background-color: $dark-grey
+  display: none
+
+  +at-breakpoint(desk)
+    display: block
+    position: fixed
+    width: 100%
+    top: 0
+    z-index: 10
+
+.trust_strip__inner
+  display: flex
+  justify-content: space-around
+  align-items: center
+  height: 2.2rem
+
+.trust_strip__item
+  color: white
+  font-family: $heading-font-family
+  font-weight: 400
+  text-transform: uppercase
