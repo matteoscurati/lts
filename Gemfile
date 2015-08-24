@@ -18,7 +18,11 @@ source "https://rails-assets.org" do
   gem "rails-assets-normalize-scss"
 end
 
+# UI
 gem "font-awesome-rails"
+
+# Amazon S3
+gem 's3_website'
 
 # Minify
 gem "middleman-minify-html"

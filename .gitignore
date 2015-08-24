@@ -19,3 +19,6 @@
 
 # Ignore node packeges
 /node_modules
+
+# Enviroment variables
+.env
