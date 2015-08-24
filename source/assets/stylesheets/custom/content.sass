@@ -1,0 +1,39 @@
+.content
+  margin-left: auto
+  margin-right: auto
+  margin-top: 10.2rem
+  padding-left: $grid-gutter
+  padding-right: $grid-gutter
+  max-width: $wrap-width
+  box-sizing: border-box
+
+  +at-breakpoint(desk)
+    width: 100%
+    max-width: $wrap-large
+
+.content__wrapper
+  z-index: -100
+
+.content__sizer
+  width: 100%
+
+  +at-breakpoint(lap)
+    width: 50%
+
+  +at-breakpoint(desk)
+    width: 25%
+
+.content__item
+  width: 25%
+  background-color: yellow
+  height: 50px
+
+.content__item--double
+  width: 50%
+  background-color: blue
+  height: 100px
+
+.content__item--full
+  width: 100%
+  height: 200px
+  background-color: red

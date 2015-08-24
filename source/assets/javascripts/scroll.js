@@ -7,6 +7,11 @@ $(function() {
     } else {
       $('.header__search--center').hide();
     }
+    if (scroll >= 36) {
+      $('.menu').css({'position': 'fixed', 'top': '-36px'});
+    } else {
+      $('.menu').css({'position': 'absolute', 'top': '0px'});
+    };
   });
 });
 $(window).scroll(function() {
@@ -28,8 +33,8 @@ $(window).scroll(function() {
     });
   };
   if (distance >= 36) {
-    $('.menu').css({'position': 'fixed', 'margin-top': '5.75rem'});
+    $('.menu').css({'position': 'fixed', 'top': '-36px'});
   } else {
-    $('.menu').css({'position': 'absolute', 'margin-top': '8.25rem'});
+    $('.menu').css({'position': 'absolute', 'top': '0px'});
   };
 });
