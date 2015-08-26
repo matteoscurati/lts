@@ -6,7 +6,8 @@
         .header__item--left registrati
       .header__content--center
         .header__image
-          img src='/images/logo.svg'
+          = link_to "/" do
+            img src='/images/logo.svg'
         .header__search--center
           input.header__search__input placeholder='Cerca...'
           .header__search__label
