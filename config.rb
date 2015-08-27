@@ -68,6 +68,3 @@ configure :build do
   activate :minify_html, remove_intertag_spaces: true
   activate :asset_hash
 end
-
-# Amazon S3 deploy
-

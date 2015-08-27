@@ -21,9 +21,6 @@ end
 # UI
 gem "font-awesome-rails"
 
-# Amazon S3
-gem 's3_website'
-
 # Minify
 gem "middleman-minify-html"
 
