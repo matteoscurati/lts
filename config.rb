@@ -36,6 +36,9 @@ require 'uglifier'
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+# Build
+set :build_dir, 'tmp'
+
 # Slim
 Slim::Engine.set_options format: :html
 Slim::Engine.set_default_options pretty: false
