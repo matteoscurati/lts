@@ -1,5 +1,9 @@
 require 'rack/contrib/try_static'
 
+use Rack::Auth::Basic, "Restricted Area" do |username, password|
+  [username, password] == ['daria', 'v8EZGmbkUEwg8']
+end
+
 use Rack::Deflater
 use Rack::TryStatic,
   root: 'tmp',
