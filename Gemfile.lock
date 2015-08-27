@@ -155,6 +155,7 @@ GEM
       activesupport (>= 3.1)
     pipe-run (0.3.0)
     progress (3.1.0)
+    puma (2.13.4)
     rack (1.5.5)
     rack-contrib (1.2.0)
       rack (>= 0.9.1)
@@ -225,6 +226,7 @@ DEPENDENCIES
   middleman-livereload (~> 3.1.0)
   middleman-minify-html
   nokogiri
+  puma
   rack-contrib
   rails-assets-modernizr
   rails-assets-normalize-scss!
