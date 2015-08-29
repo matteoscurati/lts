@@ -1,0 +1,73 @@
+.manifesto
+
+.manifesto__hero
+  +vertical-padding(2)
+
+.manifesto__bottom
+  +padding-top(2)
+  margin-left: auto
+  margin-right: auto
+  width: 30%
+  border-bottom: 1px solid $grey-beige
+
+.manifesto__inner
+  text-align: center
+
+.manifesto__title
+  font-weight: 700
+  +font-size(alpha)
+  +padding-bottom(1)
+
+.manifesto__subtitle
+  color: $medium-grey
+  +font-size(gamma)
+
+.manifesto__section
+  font-weight: 700
+  font-size: 1.3rem
+  +padding-bottom(1)
+
+.manifesto__content
+  font-weight: 300
+  +margin-bottom(2)
+
+.manifesto__quote
+  font-weight: 300
+  +font-size(gamma)
+  color: $medium-grey
+  font-style: italic
+  margin-left: auto
+  margin-right: auto
+
+  +at-breakpoint(lap)
+    width: 80%
+  +margin-top(1)
+  +margin-bottom(3)
+
+.manifesto__image
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  +vertical-padding(8)
+  +margin-bottom(2)
+
+.manifesto__double
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+  +at-breakpoint(lap)
+    flex-direction: row
+
+.manifesto__left
+  flex: 1
+
+  +at-breakpoint(lap)
+    text-align: right
+    +padding-right(0.8)
+
+.manifesto__right
+  flex: 1
+
+  +at-breakpoint(lap)
+    +padding-left(0.8)
