@@ -7,34 +7,146 @@
   max-width: $wrap-width
   box-sizing: border-box
 
+  a
+    text-decoration: none
+
   +at-breakpoint(desk)
     width: 100%
     max-width: $wrap-large
     margin-top: 10.2rem
 
+.content__heading
+  display: flex
+  flex-direction: column
+
+  +at-breakpoint(lap)
+    flex-direction: row
+
+.content__images
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  +vertical-padding(8)
+  flex: 1
+
+  +at-breakpoint(desk)
+    +vertical-padding(0)
+    flex: 2
+
+.content__infos
+  +vertical-padding(3)
+  +horizontal-padding(3)
+  background-color: $grey-beige
+  flex: 1
+
+  +at-breakpoint(lap)
+    +vertical-padding(6)
+
+.content__title
+  font-weight: 300
+  text-transform: uppercase
+  font-size: 1.3rem
+
+.content__subtitle
+  +margin-top(1.5)
+  font-weight: 400
+  font-size: 0.8rem
+  color: $light-black
+  text-align: justify
+  letter-spacing: 0.02rem
+  line-height: 1.6rem
+
+.content__description
+  @extend .content__subtitle
+  font-weight: 300
+  +margin-bottom(1.5)
+
 .content__wrapper
-  z-index: -100
+  //z-index: -100
 
 .content__sizer
   width: 100%
 
   +at-breakpoint(lap)
-    width: 50%
+    width: 49%
 
   +at-breakpoint(desk)
-    width: 25%
+    width: 22%
+
+.content__gutter
+  width: 0%
+
+  +at-breakpoint(lap)
+    width: 2%
+
+  +at-breakpoint(desk)
+    width: 4%
 
 .content__item
-  width: 25%
-  background-color: yellow
-  height: 50px
+  width: 100%
+  +margin-bottom(2)
+
+  +at-breakpoint(lap)
+    width: 49%
+
+  +at-breakpoint(desk)
+    width: 22%
+
+.content__item__inner
+  display: flex
+  flex-direction: row
+
+  +at-breakpoint(lap)
+    flex-direction: column
+
+.content__item__image
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center center
+  +vertical-padding(8)
+  flex: 1
+  transition: all 0.2s ease-in-out
+
+  +at-breakpoint(lap)
+    border-bottom: 1px solid $grey-beige
+
+    .no-touch a.content__item:hover &
+      border-bottom: 1px solid $red
+
+  +at-breakpoint(lap)
+    +vertical-padding(12)
+
+.content__item__meta
+  flex: 1
+  font-weight: 400
+  display: flex
+  flex-direction: column
+  justify-content: center
+  +padding-left(1)
+
+  +at-breakpoint(lap)
+    +padding-top(1)
+    +padding-left(0)
+    justify-content: flex-start
+
+.content__item__azienda
+  color: $medium-grey
+  text-transform: uppercase
+
+.content__item__name
+  color: $red
+  text-transform: uppercase
+  font-size: 1.25rem
+
+.content__item__year
+  font-style: italic
+  font-size: 0.8rem
 
 .content__item--double
-  width: 50%
-  background-color: blue
-  height: 100px
+  width: 100%
+
+  +at-breakpoint(desk)
+    width: 48%
 
 .content__item--full
   width: 100%
-  height: 200px
-  background-color: red
