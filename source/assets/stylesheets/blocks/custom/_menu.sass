@@ -57,6 +57,10 @@
   font-weight: 700
   font-size: 0.8em
   text-transform: uppercase
+  transition: all 0.2s ease-in-out
+
+  .no-touch &:hover
+    color: $red
 
 .menu__item--red
   @extend .menu__item
@@ -65,3 +69,7 @@
   color: white
   padding-left: 0.25rem
   padding-right: 0.25rem
+
+  .no-touch &:hover
+    color: white
+    opacity: .8
