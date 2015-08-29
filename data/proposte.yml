@@ -1,0 +1,6 @@
+proposte:
+  - name: industrial
+    claim: "Questo è un claim"
+    url: "industrial"
+    style: "classe"
+    img: "design.jpg"

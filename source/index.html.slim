@@ -5,6 +5,14 @@ title: Welcome to Middleman
   .content__wrapper
     .content__sizer
     .content__gutter
+    - data.proposte.proposte.each do |p|
+      a.content__item class=p.style href="/proposte/#{p.url}"
+        .content__home style="background-image:url('/images/#{p.img}');"
+          .content__home__inner
+            .content__home__title
+              = p.name
+            .content__home__claim
+              = p.claim
     .content__item.content__item--full
     .content__item 1
     .content__item 1
