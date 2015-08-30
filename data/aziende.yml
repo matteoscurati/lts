@@ -1,4 +1,21 @@
 aziende:
+  - name: Alessi
+    logo: "alessi.jpg"
   - name: flos
     logo: "flos.png"
-    style: "manifesto__stripe__double"
+  - name: Gubi
+    logo: "gubi.jpg"
+  - name: "L'abbate"
+    logo: "abbate.png"
+  - name: Foscarini
+    logo: "foscarini.jpg"
+  - name: Artemide
+    logo: "artemide.jpg"
+  - name: iittala
+    logo: "iittala.jpg"
+  - name: Fontana Arte
+    logo: "fontanaarte.jpg"
+  - name: Seletti
+    logo: "seletti.jpg"
+  - name: Danese Milano
+    logo: "danese.png"

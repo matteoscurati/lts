@@ -2,6 +2,7 @@
 #= require modernizr
 #= require ./jquery.sticky
 #= require ./isotope
+#= require ./packery
 #= require ./content
 #= require ./manifest
 #= require ./scroll

@@ -1,0 +1,32 @@
+.footer
+  background-color: $dark-grey
+  display: block
+  width: 100%
+
+.footer__inner
+  +vertical-padding(2)
+  display: flex
+  justify-content: center
+  align-items: center
+
+.footer__item
+  color: white
+  font-family: $heading-font-family
+  font-weight: 400
+  text-transform: uppercase
+  text-align: center
+
+.footer__meta
+  font-weight: 300
+  +padding-top(1)
+  display: flex
+  flex-direction: column
+  text-transform: lowercase
+
+  a
+    color: white
+    text-decoration: none
+    +padding-top(0.5)
+
+  p
+    +padding-top(0.5)

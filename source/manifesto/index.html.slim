@@ -1,5 +1,5 @@
 .content
-  .manifesto__image style="background-image:url('/images/design.jpg');"
+  .manifesto__image style="background-image:url('/images/lovethesign.jpg');"
   .manifesto__section__title
     h2
       | LOVEThESIGN è home design d'autore
@@ -12,17 +12,18 @@
   .manifesto__bottom
   .manifesto__content
     | Crediamo che arredare casa significhi prendersi cura di noi stessi e delle persone che amiamo, progettare un ambiente su misura per noi capace di accoglierci e rispecchiarci ogni giorno. Per questo servono entusiasmo e competenza: arredare casa significa costruire il nostro mondo.
-  .manifesto__stripe
-    .manifesto__stripe__sizer
-      - data.aziende.aziende.each do |a|
-        .manifesto__stripe__item class="#{a.style}"
-          img src="/images/#{a.logo}" title=a.name alt=a.name
   .manifesto__section__title
     h2
       | LOVEThESIGN è passione per i grandi protagonisti del design capaci di trasformare lo spazio in emozione
   .manifesto__bottom
   .manifesto__content
     | Lavoriamo per offrirti l'opportunità di acquistare online mobili e oggetti di arredamento per la casa di alto valore estetico e funzionale, ma anche per raccontarti le persone e le idee, i progetti e le aziende che li hanno resi grandi. Il design è cultura e noi vogliamo diffonderlo.
+  .manifesto__stripe
+    - data.designer.designer.each do |d|
+      .manifesto__stripe__item class="#{d.style}"
+        img src="/images/#{d.img}" title=d.name alt=d.name
+  .manifesto__caption
+    | tutti i più grandi designer
   .manifesto__section__title
     h2
       | LOVEThESIGN è il valore dell'autenticità di prodotti originali, unici nella loro riproducibilità grazie alla creatività di chi li ha progettati
@@ -30,10 +31,11 @@
   .manifesto__content
     | Ci innamoriamo delle idee che gli oggetti rappresentano, capaci di segnare un'epoca o di risollevare l'economia di un Paese. Per questo diffidiamo dalle imitazioni: su LOVEThESIGN trovi solo prodotti autentici garantiti dal contatto diretto con i fornitori, di cui siamo rivenditori autorizzati.
   .manifesto__stripe
-    .manifesto__stripe__sizer
-      - data.designer.designer.each do |d|
-        .manifesto__stripe__item class="#{d.style}"
-          img src="/images/#{d.img}" title=d.name alt=d.name
+    - data.aziende.aziende.each do |a|
+      .manifesto__stripe__item class="#{a.style}"
+        img src="/images/#{a.logo}" title=a.name alt=a.name
+  .manifesto__caption
+    | oltre 1000 marchi
   .manifesto__section__title
     h2
       | LOVEThESIGN è il Made in Italy nel mondo

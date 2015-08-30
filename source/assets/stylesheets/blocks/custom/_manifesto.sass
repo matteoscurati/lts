@@ -85,7 +85,6 @@
 
 .manifesto__stripe
   display: none
-  +vertical-padding(2)
 
   +at-breakpoint(lap)
     display: block
@@ -94,12 +93,26 @@
   width: 10%
 
 .manifesto__stripe__item
+  filter: grayscale(1)
   opacity: .5
   width: 10%
   transition: all 0.5s ease-in-out
 
   .no-touch &:hover
+    filter: grayscale(0)
     opacity: 1
 
 .manifesto__stripe__double
   width: 20%
+
+.manifesto__caption
+  text-align: center
+  font-weigh: 300
+  color: $medium-grey
+  font-style: italic
+  +padding-bottom(2)
+  font-size: .8rem
+  display: none
+
+  +at-breakpoint(lap)
+    display: block

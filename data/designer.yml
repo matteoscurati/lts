@@ -1,4 +1,21 @@
 designer:
-  - name: "Matteo Scurati"
-    style: ""
-    img: "design.jpg"
+  - name: Aldo Rossi
+    img: "aldorossi.jpg"
+  - name: Alessandro Mendini
+    img: "alessandromendini.jpg"
+  - name: Philippe Starck
+    img: "philippestarck.jpg"
+  - name: Bruno Munari
+    img: "brunomunari.jpg"
+  - name: Ettore Sottsass
+    img: "ettoresottsass.jpg"
+  - name: Fabio Novembre
+    img: "fabionovembre.jpg"
+  - name: Gio Ponti
+    img: "gioponti.jpg"
+  - name: Joe Colombo
+    img: "joecolombo.jpg"
+  - name: Richard Sapper
+    img: "richardsapper.jpg"
+  - name: Achille e Piergiacomo Castiglioni
+    img: "castiglioni.jpg"
