@@ -3,7 +3,7 @@ proposte:
     claim: "Questo è un claim"
     url: "industrial"
     style: "content__item--full"
-    img: "design.jpg"
+    img: "industrial.jpg"
   - name: organic
     claim: "Questo è un altro claim"
     url: "prova"
