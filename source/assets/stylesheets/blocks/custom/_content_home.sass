@@ -4,7 +4,10 @@
   background-position: center center
   display: block
   box-sizing: border-box
-  min-height: 350px
+  min-height: 250px
+
+  +at-breakpoint(lap)
+    min-height: 350px
 
 .content__home__inner
   color: white
@@ -43,11 +46,7 @@
 .content__item--full
 
   .content__home
-    min-height: 400px
+    min-height: 250px
 
-.content__item--double
-
-  .content__home
-    min-height: 350px
-
-  .content__home__inner
+    +at-breakpoint(lap)
+      min-height: 400px
