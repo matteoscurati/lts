@@ -2,5 +2,14 @@ proposte:
   - name: industrial
     claim: "Questo è un claim"
     url: "industrial"
-    style: "classe"
+    style: "content__item--full"
+    img: "design.jpg"
+  - name: organic
+    claim: "Questo è un altro claim"
+    url: "prova"
+    img: "design.jpg"
+  - name: organic
+    claim: "Questo è un altro claim."
+    url: "prova"
+    style: "content__item--double"
     img: "design.jpg"

@@ -2,4 +2,52 @@
   background-repeat: no-repeat
   background-size: cover
   background-position: center center
-  +vertical-padding(8)
+  display: block
+  box-sizing: border-box
+  min-height: 350px
+
+.content__home__inner
+  color: white
+  text-align: left
+  transition: background-color 0.2s ease-out
+  background-color: rgba(0, 0, 0, 0.3)
+  +position(absolute, 0 0 0 0)
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-end
+
+  +at-breakpoint(desk)
+    align-items: flex-end
+
+  .no-touch .content__home:hover &
+    background-color: rgba(0, 0, 0, 0.4)
+
+.content__home__meta
+  +padding(2)
+
+.content__home__title
+  font-weight: 700
+  +font-size(alpha)
+
+.content__home__claim
+  font-weight: 300
+  +font-size(gamma)
+
+.content__home__button
+  +margin-top(1)
+  @extend .button--primary
+  text-transform: uppercase
+  +horizontal-padding(2)
+
+.content__item--full
+
+  .content__home
+    min-height: 400px
+
+.content__item--double
+
+  .content__home
+    min-height: 350px
+
+  .content__home__inner
