@@ -1,15 +1,47 @@
 proposte:
-  - name: industrial
+  - name: Made in Italy
     claim: "Questo è un claim"
-    url: "industrial"
+    url: "made_in_italy"
     style: "content__item--full"
-    img: "industrial.jpg"
-  - name: organic
+    img: "italy.jpg"
+  - name: Minimal
     claim: "Questo è un altro claim"
-    url: "prova"
-    img: "design.jpg"
-  - name: organic
+    url: "minimal"
+    img: "minimal.jpg"
+  - name: Teatro
+    claim: "Questo è un altro claim"
+    url: "teatro"
+    img: "teatro.jpg"
+  - name: Industrial
     claim: "Questo è un altro claim."
-    url: "prova"
+    url: "industrial"
     style: "content__item--double"
-    img: "design.jpg"
+    img: "industrial.jpg"
+  - name: Scandinavo
+    claim: "Questo è un claim"
+    url: "scandinavo"
+    style: "content__item--full"
+    img: "scandinavo.jpg"
+  - name: Radical
+    claim: "Questo è un altro claim."
+    url: "radical"
+    style: "content__item--double"
+    img: "radical.jpg"
+  - name: Chic
+    claim: "Questo è un altro claim"
+    url: "chic"
+    img: "chic.jpg"
+  - name: Quarto stile
+    claim: "Questo è un altro claim"
+    url: "quarto_stile"
+    img: "quartostile.jpg"
+  - name: Organic
+    claim: "Questo è un altro claim."
+    url: "organic"
+    style: "content__item--double"
+    img: "organic.jpg"
+  - name: Giappone
+    claim: "Questo è un altro claim."
+    url: "giappone"
+    style: "content__item--double"
+    img: "giappone.jpg"
