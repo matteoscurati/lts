@@ -1,0 +1,4 @@
+aziende:
+  - name: flos
+    logo: "flos.png"
+    style: "manifesto__stripe__double"

@@ -4,7 +4,7 @@
   +vertical-padding(2)
 
 .manifesto__bottom
-  +padding-top(2)
+  +vertical-margin(1)
   margin-left: auto
   margin-right: auto
   width: 30%
@@ -27,22 +27,33 @@
   font-size: 1.3rem
   +padding-bottom(1)
 
+.manifesto__section__title
+  +padding-top(2)
+  text-align: center
+  font-weight: 400
+  +font-size(gamma)
+  color: $dark-grey
+  font-style: italic
+  margin-left: auto
+  margin-right: auto
+  width: 60%
+
 .manifesto__content
   font-weight: 300
   +margin-bottom(2)
 
 .manifesto__quote
+  text-align: center
   font-weight: 300
-  +font-size(gamma)
+  +font-size(beta)
   color: $medium-grey
   font-style: italic
   margin-left: auto
   margin-right: auto
+  +vertical-margin(5)
 
   +at-breakpoint(lap)
     width: 80%
-  +margin-top(1)
-  +margin-bottom(3)
 
 .manifesto__image
   background-repeat: no-repeat
@@ -71,3 +82,24 @@
 
   +at-breakpoint(lap)
     +padding-left(0.8)
+
+.manifesto__stripe
+  display: none
+  +vertical-padding(2)
+
+  +at-breakpoint(lap)
+    display: block
+
+.manifesto__stripe__sizer
+  width: 10%
+
+.manifesto__stripe__item
+  opacity: .5
+  width: 10%
+  transition: all 0.5s ease-in-out
+
+  .no-touch &:hover
+    opacity: 1
+
+.manifesto__stripe__double
+  width: 20%

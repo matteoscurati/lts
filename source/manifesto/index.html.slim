@@ -1,29 +1,52 @@
 .content
-  .manifesto__hero
-    .manifesto__inner
-      .manifesto__title
-        h2 Questo è il titolo del manifesto
-      .manifesto__subtitle
-        = lorem.paragraph
-      .manifesto__bottom
-  .manifesto__section
-    h3 Questo è un sottotitolo
-  .manifesto__content
-    = lorem.paragraph
-  .manifesto__quote
-    p
-      = lorem.paragraph
   .manifesto__image style="background-image:url('/images/design.jpg');"
+  .manifesto__section__title
+    h2
+      | LOVEThESIGN è home design d'autore
+  .manifesto__bottom
   .manifesto__content
-    = lorem.paragraph
-  .manifesto__double
-    .manifesto__left
-      .manifesto__section
-        h3 sottotitolo
-      .manifesto__content
-        = lorem.paragraph
-    .manifesto__right
-      .manifesto__section
-        h3 sottotitolo
-      .manifesto__content
-        = lorem.paragraph
+    | LOVEThESIGN è il sito web italiano dedicato all'home design, nato nel 2012 da un'idea di Laura, Vincenzo e Simone. Oggi è in forte espansione internazionale grazie a un team giovane e vivace che ogni giorno sceglie per te i migliori prodotti di design e le ultime tendenze di arredamento.
+  .manifesto__section__title
+    h2
+      | LOVEThESIGN è amore per la casa
+  .manifesto__bottom
+  .manifesto__content
+    | Crediamo che arredare casa significhi prendersi cura di noi stessi e delle persone che amiamo, progettare un ambiente su misura per noi capace di accoglierci e rispecchiarci ogni giorno. Per questo servono entusiasmo e competenza: arredare casa significa costruire il nostro mondo.
+  .manifesto__stripe
+    .manifesto__stripe__sizer
+      - data.aziende.aziende.each do |a|
+        .manifesto__stripe__item class="#{a.style}"
+          img src="/images/#{a.logo}" title=a.name alt=a.name
+  .manifesto__section__title
+    h2
+      | LOVEThESIGN è passione per i grandi protagonisti del design capaci di trasformare lo spazio in emozione
+  .manifesto__bottom
+  .manifesto__content
+    | Lavoriamo per offrirti l'opportunità di acquistare online mobili e oggetti di arredamento per la casa di alto valore estetico e funzionale, ma anche per raccontarti le persone e le idee, i progetti e le aziende che li hanno resi grandi. Il design è cultura e noi vogliamo diffonderlo.
+  .manifesto__section__title
+    h2
+      | LOVEThESIGN è il valore dell'autenticità di prodotti originali, unici nella loro riproducibilità grazie alla creatività di chi li ha progettati
+  .manifesto__bottom
+  .manifesto__content
+    | Ci innamoriamo delle idee che gli oggetti rappresentano, capaci di segnare un'epoca o di risollevare l'economia di un Paese. Per questo diffidiamo dalle imitazioni: su LOVEThESIGN trovi solo prodotti autentici garantiti dal contatto diretto con i fornitori, di cui siamo rivenditori autorizzati.
+  .manifesto__stripe
+    .manifesto__stripe__sizer
+      - data.designer.designer.each do |d|
+        .manifesto__stripe__item class="#{d.style}"
+          img src="/images/#{d.img}" title=d.name alt=d.name
+  .manifesto__section__title
+    h2
+      | LOVEThESIGN è il Made in Italy nel mondo
+  .manifesto__bottom
+  .manifesto__content
+    | Siamo orgogliosamente italiani e vogliamo portare le eccellenze del Made in Italy nel mondo, ma crediamo anche che la bellezza non abbia confini e selezioniamo il meglio della produzione internazionale per l'Italia.
+  .manifesto__section__title
+    h2
+      | LOVEThESIGN è il design per tutti
+  .manifesto__bottom
+  .manifesto__content
+    | Il design nasce con l'affermazione della dignità artistica degli oggetti di uso quotidiano: la produzione industriale della bellezza è non solo possibile, ma necessaria affinché l'arte esprima appieno le forme del fare contemporaneo. Il riscatto estetico degli oggetti è il riscatto sociale delle masse.
+    br
+    | Su LOVEThESIGN trovi non soltanto un ricco catalogo permanente, ma anche le LovePromo, promozioni speciali riservate agli iscritti che ti permettono di acquistare grandi classici del design e nuovi prodotti dei migliori designer emergenti con sconti fino al 70%.
+  .manifesto__quote
+      | LOVEThESIGN è la fonte di ispirazione che stavi cercando per dare nuova forma al tuo abitare: Be Cool, Stay Home.
