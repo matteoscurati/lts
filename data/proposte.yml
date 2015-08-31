@@ -21,7 +21,7 @@ proposte:
     claim: "Questo è un claim"
     url: "scandinavo"
     style: "content__item--full"
-    img: "scandinavo.jpg"
+    img: "scandinavia.jpg"
   - name: Radical
     claim: "Questo è un altro claim."
     url: "radical"
