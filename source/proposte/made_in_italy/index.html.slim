@@ -1,0 +1,112 @@
+---
+title: "Made in Italy"
+subtitle: "Arredamento d'autore."
+background: "made_italy.jpg"
+description: |
+  <p>Il Made in Italy rappresenta la forma di espressione più artistica del design industriale.</p>
+  <p>Stile complesso e policentrico, ricco di personalità molto diverse e di contraddizioni creative, in perenne tensione tra artiginato e industria, tra impegno sociale e ""ipertrofia estetica"", tra avanguardia  e mercato, lo stile italiano non ha eguali nel mondo.</p>
+  <p>Difficile inquadrarne le costanti: uso spregiudicato di ogni sorta di materiale, forte influenza della tradizione pittorica e architettonica, spiccato individualismo dei designer, ruolo fondamentale delle aziende nella costruzione di linee di tendenza.</p>
+  <p>L'oggetto di uso quotidiano Made in Italy ha un'impronta autoriale che lo accomuna alle opere d'arte.</p>
+items:
+  - name: "Mobile carrello Boby 8 grande colorato"
+    image: "boby.jpg"
+    link: "http://www.lovethesign.com/prodotti/complementi/accessori/b-line/carrello-boby-8-cassetti-h945cm-colorati"
+    azienda: "B-Line"
+    designer: "Joe Colombo"
+    year: "1970"
+    style: "content__item--double"
+  - name: "Lampada da terra Arco Led"
+    image: "arco.jpg"
+    link: "http://www.lovethesign.com/flos/lampada-da-terra-arco-led"
+    azienda: "Flos"
+    designer: "Achille e Pier Giacomo Castiglioni"
+    year: "1962"
+    style: "content__item--double"
+  - name: "Lampada da terra Luminator"
+    image: "luminator.jpg"
+    link: "http://www.lovethesign.com/prodotti/illuminazione/lampade-da-terra/fontanaarte/lampada-da-terra-luminator"
+    azienda: "FontanaArte"
+    designer: "Pietro Chiesa"
+    year: "1933"
+  - name: "Set da Scrivania Canarie"
+    image: "canarie.png"
+    link: "http://www.lovethesign.com/prodotti/complementi-darredo/accessori/danese-milano/set-da-scrivania-canarie"
+    azienda: "Danese Milano"
+    designer: "Bruno Munari"
+    year: "1958"
+  - name: "Tavolino con ruote quadrato"
+    image: "ruote.jpg"
+    link: "http://www.lovethesign.com/fontanaarte/tavolino-con-ruote-quadrato"
+    azienda: "FontanaArte"
+    designer: "Gae Aulenti"
+    year: "1980"
+    style: "content__item--double"
+  - name: "Caffettiera La Cupola"
+    image: "cupola.jpg"
+    link: "http://www.lovethesign.com/di-alessi/caffettiera-la-cupola-6"
+    azienda: "A di Alessi"
+    designer: "Aldo Rossi"
+    year: "1988"
+  - name: "Lampada da tavolo Amuleto Trinity "
+    image: "trinity.jpg"
+    link: "http://www.lovethesign.com/ramun/lampada-da-tavolo-amuleto-trinity-grande-opaco-multicolor"
+    azienda: "Ramun"
+    designer: "Alessandro Mendini"
+    year: "2013"
+    style: "content__item--double"
+  - name: "Sedia Livia"
+    image: "livia.png"
+    link: "http://www.lovethesign.com/prodotti/arredamento/speciali/idee-regalo/lei/labbate/sedia-livia"
+    azienda: "L'Abbate"
+    designer: "Gio Ponti"
+    year: "1937"
+    style: "content__item--double"
+  - name: "Libreria Ptolomeo Original"
+    image: "ptolomeo.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/librerie/opinion-ciatti/ptolomeo-original-h215cm"
+    azienda: "Opinion Ciatti"
+    designer: "Bruno Rainaldi"
+    year: "2002"
+  - name: "Him & Her"
+    image: "himher.jpg"
+    link: "http://www.lovethesign.com/casamania/sedia-him-lucido-0"
+    azienda: "Casamania"
+    designer: "Fabio Novembre"
+    year: "2008"
+    style: "content__item--double"
+---
+.content
+  .content__heading
+    .content__images style="background-image:url('/images/#{current_page.data.background}');"
+    .content__infos
+      .content__title
+        h2
+          = current_page.data.title
+      - if current_page.data.subtitle
+        .content__subtitle
+          p
+            = current_page.data.subtitle
+  - if current_page.data.description
+    .content__description
+      = current_page.data.description
+  .content__wrapper
+    .content__sizer
+    .content__gutter
+    - current_page.data.items.each do |i|
+      a.content__item class=i.style href=i.link
+        .content__item__inner
+          - if i.image
+            .content__item__image style="background-image:url('/images/#{i.image}')"
+          .content__item__meta
+            - if i.azienda
+              .content__item__azienda
+                = i.azienda
+            - if i.designer
+              .content__item__designer
+                = i.designer
+            - if i.name
+              .content__item__name
+                = i.name
+            - if i.year
+              .content__item__year
+                = i.year

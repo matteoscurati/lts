@@ -1,9 +1,9 @@
 proposte:
   - name: Made in Italy
-    claim: "Questo è un claim"
+    claim: "Arredamento d'autore"
     url: "made_in_italy"
     style: "content__item--full"
-    img: "italy.jpg"
+    img: "made_italy.jpg"
   - name: Minimal
     claim: "Questo è un altro claim"
     url: "minimal"
