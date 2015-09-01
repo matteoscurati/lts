@@ -1,0 +1,100 @@
+---
+title: "Minimal style"
+subtitle: "L'eleganza della sottrazione."
+background: "minimalism.jpg"
+description: |
+  <p>Il filosofo Guglielmo di Ockham lo ha sempre detto: tutto quello che non è necessario è inutile. Ma è stato il maestro del Movimento Moderno Mies van der Rohe a porre questo principio alla base del suo stile progettuale: Less is More. Ora tocca a te: se ami l'eleganza della semplicità e non resisti al fascino delle linee  essenziali, lasciati ispirare dalle proposte minimaliste del design contemporaneo.</p>
+items:
+  - name: "Forchettone Gourmet"
+    image: "gourmet.jpg"
+    link: "http://www.lovethesign.com/mono/forchettone-gourmet"
+    azienda: "mono"
+    designer: "Pete Raacke"
+  - name: "Lampada da terra Light Stick"
+    image: "styck.jpg"
+    link: "http://www.lovethesign.com/prodotti/illuminazione/lampade-da-terra/catellani-smith/lampada-da-terra-light-stick"
+    azienda: "Catellani & Smith"
+    designer: "Enzo Catellani"
+  - name: "Mensola Mamba Light"
+    image: "mamba.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/mensole-e-moduli/mdf-italia/mensola-mamba-light-sx"
+    azienda: "MDF Italia"
+    designer: "Victor Vasilev"
+    style: "content__item--full"
+  - name: "Piatti da portata New Norm"
+    image: "norm.jpg"
+    link: "http://www.lovethesign.com/menu/piatto-da-portata-new-norm-diam-23"
+    azienda: "Menu"
+    designer: "Menu"
+    style: "content__item--double"
+  - name: "Sedia Afteroom"
+    image: "afternoon.jpg"
+    link: "http://www.lovethesign.com/menu/sedia-afteroom"
+    azienda: "Menu"
+    designer: "Afteroom"
+    style: "content__item--double"
+  - name: "Sedia Sostanza Naturale"
+    image: "naturale.png"
+    link: "http://www.lovethesign.com/prodotti/arredamento/speciali/idee-regalo/lui/essence-wood/sostanza-naturale-sedia"
+    azienda: "Essence wood"
+    style: "content__item--double"
+  - name: "Letto contenitore Tatami"
+    image: "tatami.jpg"
+    link: "http://www.lovethesign.com/prodotti/kids/culle-e-lettini/lagrama/letto-contenitore-tatami-l-204-cm"
+    azienda: "Lagrama"
+    designer: "Lagrama"
+    style: "content__item--full"
+  - name: "Tavolo T120 express"
+    image: "express.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/tavoli/concon/tavolo-t120-bianco-opaco"
+    azienda: "Con&Con"
+    designer: "LoveTheSign"
+    style: "content__item--full"
+  - name: "Bottiglia Iglo Jar"
+    image: "iglo.jpg"
+    link: "http://www.lovethesign.com/prodotti/tavola-e-cucina/bicchieri-e-vetro/covo/bottiglia-iglo-jar-grande"
+    azienda: "Covo"
+    designer: "Iglo Jar"
+    style: "content__item--double"
+  - name: "Scaffale Conceal Small"
+    image: "conceal.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/mensole-e-moduli/umbra/scaffale-conceal-small"
+    azienda: "Umbra"
+    designer: "Paul Rowan"
+    style: "content__item--double"
+---
+.content
+  .content__heading
+    .content__images style="background-image:url('/images/#{current_page.data.background}');"
+    .content__infos
+      .content__title
+        h2
+          = current_page.data.title
+      - if current_page.data.subtitle
+        .content__subtitle
+          p
+            = current_page.data.subtitle
+  - if current_page.data.description
+    .content__description
+      = current_page.data.description
+  .content__wrapper
+    .content__sizer
+    .content__gutter
+    - current_page.data.items.each do |i|
+      a.content__item class=i.style href=i.link
+        .content__item__inner
+          - if i.image
+            .content__item__image style="background-image:url('/images/#{i.image}')"
+          .content__item__meta
+            - if i.azienda
+              .content__item__azienda
+                = i.azienda
+            - if i.designer
+              .content__item__designer
+                = i.designer
+            - if i.name
+              .content__item__name
+                = i.name
+            - if i.year
+              .content__item__year
+                = i.year

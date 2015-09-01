@@ -1,13 +1,13 @@
 proposte:
-  - name: Made in Italy
+  - name: "Made in Italy"
     claim: "arredamento d'autore"
     url: "made_in_italy"
     style: "content__item--full"
     img: "made_italy.jpg"
-  - name: Minimal
-    claim: "Questo è un altro claim"
+  - name: "Minimal style"
+    claim: "Less is more"
     url: "minimal"
-    img: "minimal.jpg"
+    img: "minimalism.jpg"
   - name: Teatro
     claim: "Questo è un altro claim"
     url: "teatro"
