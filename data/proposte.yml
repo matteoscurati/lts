@@ -12,9 +12,9 @@ proposte:
     claim: "Questo è un altro claim"
     url: "teatro"
     img: "teatro.jpg"
-  - name: Industrial
-    claim: "Questo è un altro claim."
-    url: "industrial"
+  - name: "Factory home"
+    claim: "glam e funzionale"
+    url: "factory_home"
     style: "content__item--double"
     img: "industrial.jpg"
   - name: "Rinascimento Scandinavo"

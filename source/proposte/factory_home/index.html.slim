@@ -1,0 +1,109 @@
+---
+title: "Factory home"
+subtitle: "Il lato più glam e funzionale dell'edilizia industriale unito al comfort di casa tua."
+background: "industrial.jpg"
+description: |
+  <p>
+    Era il pieno degli anni Sessanta quando in un trascurato loft della 231 di East 47th Street, Midtown Manhattan, uno tsunami d'argento travolse pareti e soffitto. Ma non devi riempire la casa di carta stagnola anche tu per ricreare lo stile industriale della Factory di Andy Warhol. 
+  </p>
+  <p>
+    L'importante è non perdere la vena glam dello stile industrial: open-space, soffitto altissimo, colori neutrali, dettagli grezzi e metallo luccicante. Il segreto per tradurlo in casa? Usa la luce e il legno per scaldare l'atmosfera.
+  </p>
+items:
+  - name: "Lampada da tavolo Tizio"
+    image: "tizio.jpg"
+    link: "http://www.lovethesign.com/artemide/lampada-da-tavolo-tizio"
+    azienda: "Artemide"
+    designer: "Richard Sapper"
+    year: "1970"
+    style: "content__item--double"
+  - name: "Libreria Tubola"
+    image: "tubola.png"
+    link: "http://www.lovethesign.com/prodotti/arredamento/librerie/ak47/libreria-tubola-0"
+    azienda: "Ak47"
+    designer: "Ivano Losa"
+    year: "2011"
+  - name: "Lampada a parete Lettere Neon Art"
+    image: "neon.jpg"
+    link: "http://www.lovethesign.com/seletti/lampada-parete-lettere-neon-art"
+    azienda: "Seletti"
+    designer: "Selab Design"
+  - name: "Divano Dressed"
+    image: "dressed.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/divani/tacchini/divano-dressed-verde"
+    azienda: "Tacchini"
+    designer: "Pietro Arosio"
+    year: "2000"
+    style: "content__item--full"
+  - name: "Achille"
+    image: "achille.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/tavoli/labbate/tavolo-achille"
+    azienda: "L'Abbate"
+    designer: "Paolo Armenise, Silvia Nerbi"
+    year: "2009"
+    style: "content__item--full"
+  - name: "Lampada a sospensione in cemento"
+    image: "cemento.jpg"
+    link: "http://www.lovethesign.com/prodotti/illuminazione/lampade-sospensione/serax/lampada-sospensione-cemento-h-17-cm"
+    azienda: "Serax"
+    designer: "Renate Vos"
+    year: "2014"
+  - name: "Lampada da terra Boalum"
+    image: "boalum.jpg"
+    link: "http://www.lovethesign.com/artemide/lampada-da-terra-boalum"
+    azienda: "Artemide"
+    designer: "Livio Castiglioni, Gianfranco Frattini"
+    year: "1970"
+  - name: "Sedia Otto"
+    image: "otto.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/sedie/pulpo/sedia-otto"
+    azienda: "Pulpo"
+    designer: "Peter Raacke"
+    year: "1968"
+  - name: "Mobile TV Atelier K12 in teak e ferro"
+    image: "atelier.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/consolle/idistudio/porta-tv-atelier-k12-teak-e-ferro"
+    azienda: "IDIstudio"
+    style: "content__item--full"
+  - name: "4 Appendiabiti da parete Chiodo Schiaccia Chiodo"
+    image: "chiodo.jpg"
+    link: "http://www.lovethesign.com/prodotti/complementi-darredo/appendiabiti/opinion-ciatti/appendiabiti-chiodo-schiaccia-chiodo-5-pcs"
+    azienda: "Opinion Ciatti"
+    designer: "Bruno Rainaldi"
+    year: "2007"
+---
+.content
+  .content__heading
+    .content__images style="background-image:url('/images/#{current_page.data.background}');"
+    .content__infos
+      .content__title
+        h2
+          = current_page.data.title
+      - if current_page.data.subtitle
+        .content__subtitle
+          p
+            = current_page.data.subtitle
+  - if current_page.data.description
+    .content__description
+      = current_page.data.description
+  .content__wrapper
+    .content__sizer
+    .content__gutter
+    - current_page.data.items.each do |i|
+      a.content__item class=i.style href=i.link
+        .content__item__inner
+          - if i.image
+            .content__item__image style="background-image:url('/images/#{i.image}')"
+          .content__item__meta
+            - if i.azienda
+              .content__item__azienda
+                = i.azienda
+            - if i.designer
+              .content__item__designer
+                = i.designer
+            - if i.name
+              .content__item__name
+                = i.name
+            - if i.year
+              .content__item__year
+                = i.year
