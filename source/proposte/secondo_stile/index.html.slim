@@ -1,0 +1,101 @@
+---
+title: "Secondo stile"
+subtitle: "Cambia punto di vista e dona un tocco di magia alla tua casa: basta un gioco di prospettiva e gli oggetti più tradizionali si trasformeranno sotto i tuoi occhi..."
+background: "secondostile.jpg"
+description: |
+  <p>Le abitazioni che animavano la grande Pompei antica alla fine del primo secolo a.C. erano decorate con uno stile che si distingue perché crea negli affreschi un'inedita illusione di profondità.</p>
+  <p>Questo stile viene definito dai critici d'arte "secondo stile pompeiano" e sfrutta una particolare tecnica di pittura illusionistica anche nota come effetto di trompe l'œil, proprio perché capace di ingannare lo sguardo. In questo inganno è racchiuso tutto il fascino dell'inaspettato.</p>
+  <p>Se anche tu ami stupire o essere stupito e vuoi arredare casa con la giusta dose di  imprevedibilità, LOVEThESIGN ti propone una selezione di oggetti di design capaci di creare piccole grandi illusioni, ma che non ti deluderanno mai. Scoprili!</p>
+items:
+  - name: "Sedia Tria Wood 3 gambe"
+    image: "tria.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/sedie/sedia-tria-wood-avorio-e-nera-3-gambe"
+    azienda: "Colè"
+    designer: "Catharina Lorenz, Steffen Kaz"
+    style: "content__item--double"
+  - name: "Porta candela POV da parete"
+    image: "pov.jpg"
+    link: "http://www.lovethesign.com/prodotti/complementi/menu/porta-candela-pov-da-parete"
+    azienda: "Menu"
+  - name: "Tavolino Loll L"
+    image: "loll.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/tavolini/pulpo/tavolino-loll-l"
+    azienda: "Pulpo"
+    designer: "e27 Berlin"
+  - name: "Tavolo Big Table Noce"
+    image: "big.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/tavoli/bonaldo/tavolo-big-table-noce"
+    azienda: "Bonaldo"
+    designer: "Alain Gilles"
+    year: "2009"
+    style: "content__item--full"
+  - name: "Tavolo alto da parete Yeh"
+    image: "yeh.jpg"
+    link: "http://www.lovethesign.com/menu/tavolo-alto-da-parete-yeh"
+    azienda: "Menu"
+    designer: "Kenyon Yeh"
+  - name: "Sedia Fläpps a quadri"
+    image: "flapps.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/sedie/ambivalenz/sedia-pieghevole-quadri-fl%C3%A4pps"
+    azienda: "Ambivalenz"
+    designer: "Sebastian Feucht, Mason Juday, Stefan Knorr"
+    style: "content__item--double"
+  - name: "Vassoio TT Ovale"
+    image: "ovale.jpg"
+    link: "http://www.lovethesign.com/adele-c/vassoio-tt-ovale"
+    azienda: "Adele-C"
+    designer: "Ron Gilad"
+    style: "content__item--full"
+  - name: "Specchiera Tusa"
+    image: "tusa.jpg"
+    link: "http://www.lovethesign.com/prodotti/complementi/specchi/internoitaliano/specchiera-tusa-h83-cm"
+    azienda: "Internoitaliano"
+    designer: "Giulio Iacchetti"
+    style: "content__item--double"
+  - name: "Cornice Tonki"
+    image: "tonki.jpg"
+    link: "http://www.lovethesign.com/tonki/cornice-tonki"
+    azienda: "Tonki"
+    designer: "Tagmi"
+  - name: "Lampada da terra Demì"
+    image: "demi.jpg"
+    link: "http://www.lovethesign.com/prodotti/illuminazione/lampade-da-terra/officinanove/lampada-demi-180%C2%B0"
+    azienda: "Officinanove"
+    designer: "Carlo Bargagna"
+    style: "content__item--double"
+---
+.content
+  .content__heading
+    .content__images style="background-image:url('/images/#{current_page.data.background}');"
+    .content__infos
+      .content__title
+        h2
+          = current_page.data.title
+      - if current_page.data.subtitle
+        .content__subtitle
+          p
+            = current_page.data.subtitle
+  - if current_page.data.description
+    .content__description
+      = current_page.data.description
+  .content__wrapper
+    .content__sizer
+    .content__gutter
+    - current_page.data.items.each do |i|
+      a.content__item class=i.style href=i.link
+        .content__item__inner
+          - if i.image
+            .content__item__image style="background-image:url('/images/#{i.image}')"
+          .content__item__meta
+            - if i.azienda
+              .content__item__azienda
+                = i.azienda
+            - if i.designer
+              .content__item__designer
+                = i.designer
+            - if i.name
+              .content__item__name
+                = i.name
+            - if i.year
+              .content__item__year
+                = i.year
