@@ -1,0 +1,106 @@
+---
+title: "Radical Instinct"
+subtitle: "Grandi classici e giovani talenti, funzionalismo organico e rispetto per l'ambiente: il design viene dal Nord."
+background: "radical.jpg"
+description: |
+  <p>A partire dagli Sessanta, la riduzione funzionalista del design razionalista inizia a trovare le prime resistenze: la ragione esprime soltanto una delle tante forme che può assumere il rapporto che abbiamo con gli oggetti.</p>
+  <p>In Italia e nel mondo, sempre più designer in aperta contestazione con il Movimento Moderno mettono in discussione il proprio ruolo e rivendicano il valore fondamentale dell'istinto e dell'irrazionalità nel processo creativo.</p>
+  <p>La dimensione emotiva, ludica, pop, a volte persino kitch diventa protagonista del design industriale. Se anche tu non vuoi mettere freni alla libertà di espressione e hai una forte vena ironica, lasciati conquistare dall'istinto radical.</p>
+items:
+  - name: "Art Toy Gold"
+    image: "toy.jpg"
+    link: "http://www.lovethesign.com/artbeat/art-toy-gold"
+    azienda: "Artbeat"
+    designer: "Marco Calcinaro"
+  - name: "Seduta Pony"
+    image: "pony.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/kids/studio-eero-aarnio/seduta-pony"
+    azienda: "Studio Eero Aarnio"
+    designer: "Eero Aarnio"
+  - name: "Lampada da tavolo Baby"
+    image: "baby.jpg"
+    link: "http://www.lovethesign.com/prodotti/illuminazione/lampade-da-tavolo/slide/lampada-baby"
+    azienda: "Slide"
+    designer: "Roberto Semprini"
+    style: "content__item--double"
+  - name: "Lampada da tavolo Snoopy"
+    image: "snoopy.jpg"
+    link: "http://www.lovethesign.com/prodotti/illuminazione/lampade-da-tavolo/flos/lampada-snoopy-da-tavolo"
+    azienda: "Flos"
+    designer: "Achille e Pier Giacomo Castiglioni"
+    year: "1967"
+    style: "content__item--double"
+  - name: "Libreria Robox Multicolor"
+    image: "robox.jpg"
+    link: "http://www.lovethesign.com/casamania/libreria-robox-multicolor"
+    azienda: "Casamania"
+    designer: "Fabio Novembre"
+    year: "2011"
+    style: "content__item--double"
+  - name: "Totem Symbolik"
+    image: "symbolik.jpg"
+    link: "http://www.lovethesign.com/prodotti/design-gallery/karim-rashid/bitossi-ceramiche/totem-symbolik"
+    azienda: "Totem"
+    designer: "Karim Rashid"
+    style: "content__item--double"
+    year: "2006"
+  - name: "Spremiagrumi Juicy Salif"
+    image: "juicy.jpg"
+    link: "http://www.lovethesign.com/alessi/spremiagrumi-juicy-salif"
+    azienda: "Alessi"
+    designer: "Philippe Starck"
+    year: "1990"
+    style: "content__item--double"
+  - name: "Sottopiatto Girotondo"
+    image: "girotondo.jpg"
+    link: "http://www.lovethesign.com/di-alessi/sottopiatto-girotondo"
+    azienda: "A di Alessi"
+    designer: "Stefano Giovannoni, Guido Venturini"
+  - name: "Tavolino Fizz"
+    image: "fizz.png"
+    link: "http://www.lovethesign.com/prodotti/arredamento/idee-regalo/lui/slide/tavolino-fizz-table-bianco"
+    azienda: "Slide"
+    designer: "Gianni Arnaudo"
+  - name: "Scultura dito L.O.V.E"
+    image: "dito.jpg"
+    link: "http://www.lovethesign.com/seletti-wears-toiletpaper/scultura-dito-love"
+    azienda: "Seletti"
+    designer: "Toiletpaper"
+    year: "2000"
+    style: "content__item--double"
+---
+.content
+  .content__heading
+    .content__images style="background-image:url('/images/#{current_page.data.background}');"
+    .content__infos
+      .content__title
+        h2
+          = current_page.data.title
+      - if current_page.data.subtitle
+        .content__subtitle
+          p
+            = current_page.data.subtitle
+  - if current_page.data.description
+    .content__description
+      = current_page.data.description
+  .content__wrapper
+    .content__sizer
+    .content__gutter
+    - current_page.data.items.each do |i|
+      a.content__item class=i.style href=i.link
+        .content__item__inner
+          - if i.image
+            .content__item__image style="background-image:url('/images/#{i.image}')"
+          .content__item__meta
+            - if i.azienda
+              .content__item__azienda
+                = i.azienda
+            - if i.designer
+              .content__item__designer
+                = i.designer
+            - if i.name
+              .content__item__name
+                = i.name
+            - if i.year
+              .content__item__year
+                = i.year

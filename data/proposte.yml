@@ -1,6 +1,6 @@
 proposte:
   - name: Made in Italy
-    claim: "Arredamento d'autore"
+    claim: "arredamento d'autore"
     url: "made_in_italy"
     style: "content__item--full"
     img: "made_italy.jpg"
@@ -18,12 +18,12 @@ proposte:
     style: "content__item--double"
     img: "industrial.jpg"
   - name: "Rinascimento Scandinavo"
-    claim: "Tutta la luminosità nordica"
+    claim: "tutta la luminosità nordica"
     url: "rinascimento_scandinavo"
     style: "content__item--full"
     img: "scandinavia.jpg"
-  - name: Radical
-    claim: "Questo è un altro claim."
+  - name: Radical Instinct
+    claim: "il contro-design"
     url: "radical"
     style: "content__item--double"
     img: "radical.jpg"
