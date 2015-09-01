@@ -1,0 +1,107 @@
+---
+title: "Rinascimento Scandinavo"
+subtitle: "Grandi classici e giovani talenti, funzionalismo organico e rispetto per l'ambiente: il design viene dal Nord"
+background: "scandinavia.jpg"
+description: |
+  <p>La forte caratterizzazione organica e funzionale del mobile, la sapiente progettazione di una luce artificiale complementare alla luminosità nordica, la continuità tra artigianato locale e design industriale, le linee pulite ed essenziali plasmate attraverso il legno e il vetro: sono questi gli elementi che hanno imposto il design scandinavo come un punto di riferimento imprescindibile per l'arredo contemporaneo.</p>
+  <p>Su LOVEThESIGN trovi i classici di grandi maestri come Alvar Aalto e Tapio Wirkkala, ma anche le creazioni di tendenza dei giovani talenti protagonisti del "rinascimento del Nord", da Nanna Ditzel a Mattias Ståhlbom. Scoprili!</p>
+items:
+  - name: "Vaso Savoy"
+    image: "savoy.jpg"
+    link: "http://www.lovethesign.com/prodotti/complementi/vasi/iittala/vaso-alvar-aalto"
+    azienda: "Iittala"
+    designer: "Alvar Aalto"
+    year: "1936"
+  - name: "Scaffale String"
+    image: "string.jpg"
+    link: "http://www.lovethesign.com/string/scaffale-string-pocket"
+    azienda: "String"
+    designer: "Nisse Strinning"
+    year: "1949"
+  - name: "Sedia a dondolo Nanny"
+    image: "nanny.jpg"
+    link: "http://www.lovethesign.com/sika/sedia-dondolo-nanny"
+    azienda: "Sika"
+    designer: "Nanna Ditzel"
+    year: "1969"
+    style: "content__item--double"
+  - name: "Bottiglia Wirkkala"
+    image: "wirkkala.jpg"
+    link: "http://www.lovethesign.com/iittala/bottiglia-wirkkala-alta"
+    azienda: "Iittala"
+    designer: "Tapio Wirkkala"
+    year: "1959"
+    style: "content__item--double"
+  - name: "Divano letto Soul"
+    image: "soul.jpg"
+    style: "content__item--full"
+    link: "http://www.lovethesign.com/prodotti/arredamento/divani-e-poltrone-letto/karup/divano-letto-soul-naturale"
+    azienda: "Karup"
+  - name: "Lampada a sospensione E27"
+    image: "socket.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/speciali/must-have/muuto/lampada-e27-socket-new"
+    azienda: "Muuto"
+    designer: "Mattias Ståhlbom"
+    year: "2008"
+    style: "content__item--double"
+  - name: "Lampada da terra Pull"
+    image: "pull.jpg"
+    link: "http://www.lovethesign.com/prodotti/illuminazione/lampade-da-terra/muuto/lampada-pull"
+    azienda: "Muuto"
+    designer: "Whatswhat"
+    year: "2010"
+    style: "content__item--double"
+  - name: "Panca Daybed"
+    image: "daybed.jpg"
+    link: "http://www.lovethesign.com/menu/panca-wool-daybed"
+    azienda: "Menu"
+    style: "content__item--full"
+  - name: "Tavolo Nord"
+    image: "nord.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/tavoli/normann-copenhagen/tavolo-nord-%C3%B8120cm"
+    azienda: "Normann Copenhagen"
+    designer: "Claus C. Simonsen"
+  - name: "Libreria One Step Up"
+    image: "onestep.jpg"
+    link: "http://www.lovethesign.com/prodotti/arredamento/librerie/normann-copenhagen/libreria-step-0"
+    azienda: "Normann Copenhagen"
+    designer: "Claus C. Simonsen"
+---
+.content
+  .content__heading
+    .content__images style="background-image:url('/images/#{current_page.data.background}');"
+    .content__infos
+      .content__title
+        h2
+          = current_page.data.title
+      - if current_page.data.subtitle
+        .content__subtitle
+          p
+            = current_page.data.subtitle
+  - if current_page.data.description
+    .content__description
+      = current_page.data.description
+  .content__wrapper
+    .content__sizer
+    .content__gutter
+    - current_page.data.items.each do |i|
+      a.content__item class=i.style href=i.link
+        .content__item__inner
+          - if i.image
+            .content__item__image style="background-image:url('/images/#{i.image}')"
+          .content__item__meta
+            - if i.azienda
+              .content__item__azienda
+                = i.azienda
+            - if i.designer
+              .content__item__designer
+                = i.designer
+            - if i.name
+              .content__item__name
+                = i.name
+            - if i.year
+              .content__item__year
+                = i.year
+    .content__item.content__item--double
+    .content__item.content__item--double
+    .content__item.content__item--full

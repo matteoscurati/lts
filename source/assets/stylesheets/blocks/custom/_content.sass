@@ -61,6 +61,9 @@
   font-weight: 300
   +margin-bottom(1.5)
 
+  p
+    +margin-top(0.5)
+
 .content__wrapper
   //z-index: -100
 
@@ -84,10 +87,12 @@
 
 .content__item
   width: 100%
+  border-bottom: 1px solid $grey-beige
   +margin-bottom(2)
 
   +at-breakpoint(lap)
     width: 49%
+    border-bottom: none
 
   +at-breakpoint(desk)
     width: 22%
@@ -105,13 +110,6 @@
   background-position: center center
   +vertical-padding(8)
   flex: 1
-  transition: all 0.2s ease-in-out
-
-  +at-breakpoint(lap)
-    border-bottom: 1px solid $grey-beige
-
-    .no-touch a.content__item:hover &
-      border-bottom: 1px solid $red
 
   +at-breakpoint(lap)
     +vertical-padding(12)
@@ -123,11 +121,17 @@
   flex-direction: column
   justify-content: center
   +padding-left(1)
+  transition: all 0.2s ease-in-out
 
   +at-breakpoint(lap)
     +padding-top(1)
     +padding-left(0)
     justify-content: flex-start
+    +margin-top(1.5)
+    border-top: 1px solid $grey-beige
+
+    .no-touch a.content__item:hover &
+      border-top: 1px solid $red
 
 .content__item__azienda
   color: $medium-grey
@@ -144,6 +148,9 @@
 
 .content__item--double
   width: 100%
+
+  +at-breakpoint(lap)
+    width: 49%
 
   +at-breakpoint(desk)
     width: 48%

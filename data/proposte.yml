@@ -17,9 +17,9 @@ proposte:
     url: "industrial"
     style: "content__item--double"
     img: "industrial.jpg"
-  - name: Scandinavo
-    claim: "Questo è un claim"
-    url: "scandinavo"
+  - name: "Rinascimento Scandinavo"
+    claim: "Tutta la luminosità nordica"
+    url: "rinascimento_scandinavo"
     style: "content__item--full"
     img: "scandinavia.jpg"
   - name: Radical
