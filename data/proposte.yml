@@ -1,6 +1,6 @@
 proposte:
   - name: "Made in Italy"
-    claim: "Arredamento d'autore"
+    claim: "Arredamento d'Autore"
     url: "made_in_italy"
     style: "content__item--full"
     img: "made_italy.jpg"
