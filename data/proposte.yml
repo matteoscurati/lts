@@ -31,7 +31,7 @@ proposte:
     claim: "Questo è un altro claim"
     url: "chic"
     img: "chic.jpg"
-  - name: "Secondo stile"
+  - name: "Secondo Stile"
     claim: "giochi di prospettive"
     url: "secondo_stile"
     img: "secondostile.jpg"
@@ -40,7 +40,7 @@ proposte:
     url: "organic"
     style: "content__item--double"
     img: "organic.jpg"
-  - name: Giappone
+  - name: "Influenze Nipponiche"
     claim: "Questo è un altro claim."
     url: "giappone"
     style: "content__item--double"
