@@ -35,8 +35,8 @@ proposte:
     claim: "giochi di prospettive"
     url: "secondo_stile"
     img: "secondostile.jpg"
-  - name: Organic
-    claim: "Questo è un altro claim."
+  - name: "Organic feeling"
+    claim: "forme naturali"
     url: "organic"
     style: "content__item--double"
     img: "organic.jpg"

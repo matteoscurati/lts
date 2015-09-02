@@ -7,7 +7,7 @@
         .header-mobile__top__item
           | registrati
       .header-mobile__center
-        .header-mobile__center__item--left
+        a.header-mobile__center__item--left href="/"
           img src='/images/logo.svg' alt='LOVEThESIGN - Be Cool, Stay Home'
         .header-mobile__center__item--right
           .fa.fa-shopping-cart.fa-2x
@@ -24,11 +24,6 @@
         a.header-mobile__bottom--right href="/manifesto"
           | Manifesto
       .header-mobile__menu
-        .header-mobile__menu__item
-          | Proposta
-        .header-mobile__menu__item
-          | Proposta
-        .header-mobile__menu__item
-          | Proposta
-        .header-mobile__menu__item
-          | Proposta
+        - data.proposte.proposte.each do |p|
+          a.header-mobile__menu__item href=p.url
+            = p.name

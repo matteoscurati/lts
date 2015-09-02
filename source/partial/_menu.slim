@@ -5,6 +5,43 @@
         img src="/images/home-icon.png" height="20" width="24"
     a.menu__item--red href="/manifesto"
       | manifesto
-    - data.proposte.proposte.each do |p|
-      a.menu__item href="p.url"
-        = p.name
+    .menu__item
+      | proposte
+      span
+        i.fa.fa-caret-down
+      .menu__list
+        - data.proposte.proposte.each do |p|
+          a.menu__list__item href=p.url
+            = p.name
+    .menu__item
+      | arredamento
+      span
+        i.fa.fa-caret-down
+    .menu__item
+      | complementi
+      span
+        i.fa.fa-caret-down
+    .menu__item
+      | illuminazione
+      span
+        i.fa.fa-caret-down
+    .menu__item
+      | tavola&cucina
+      span
+        i.fa.fa-caret-down
+    .menu__item
+      | tessile
+      span
+        i.fa.fa-caret-down
+    .menu__item
+      | accessori casa
+      span
+        i.fa.fa-caret-down
+    .menu__item
+      | kids
+      span
+        i.fa.fa-caret-down
+    .menu__item
+      | outdoor
+      span
+        i.fa.fa-caret-down
