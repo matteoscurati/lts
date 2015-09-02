@@ -23,12 +23,12 @@ proposte:
     style: "content__item--full"
     img: "scandinavia.jpg"
   - name: Radical Instinct
-    claim: "il contro-design"
+    claim: "Il contro-design"
     url: "radical"
     style: "content__item--double"
     img: "radical.jpg"
   - name: Chic
-    claim: "Questo è un altro claim"
+    claim: "Eleganza fuori dal coro"
     url: "chic"
     img: "chic.jpg"
   - name: "Secondo Stile"
