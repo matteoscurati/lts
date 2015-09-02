@@ -1,6 +1,7 @@
 #= require jquery
 #= require modernizr
 #= require ./jquery.sticky
+#= require ./imagesloaded
 #= require ./isotope
 #= require ./packery
 #= require ./content
