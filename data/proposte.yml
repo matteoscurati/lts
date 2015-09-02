@@ -27,8 +27,8 @@ proposte:
     url: "radical"
     style: "content__item--double"
     img: "radical.jpg"
-  - name: Chic
-    claim: "Eleganza fuori dal coro"
+  - name: "Fresh & Chic"
+    claim: "La leggerezza del lusso"
     url: "chic"
     img: "chic.jpg"
   - name: "Secondo Stile"
