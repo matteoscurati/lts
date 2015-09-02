@@ -25,5 +25,5 @@
           | Manifesto
       .header-mobile__menu
         - data.proposte.proposte.each do |p|
-          a.header-mobile__menu__item href=p.url
+          a.header-mobile__menu__item href=/proposte/#{p.url}
             = p.name

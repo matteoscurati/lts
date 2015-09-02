@@ -11,7 +11,7 @@
         i.fa.fa-caret-down
       .menu__list
         - data.proposte.proposte.each do |p|
-          a.menu__list__item href=p.url
+          a.menu__list__item href="/proposte/#{p.url}"
             = p.name
     .menu__item
       | arredamento
