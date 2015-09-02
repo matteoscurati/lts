@@ -8,8 +8,8 @@ proposte:
     claim: "Less is More"
     url: "minimal"
     img: "minimalism.jpg"
-  - name: Teatro
-    claim: "Questo è un altro claim"
+  - name: "Teatro"
+    claim: "Il design a scuola di teatro"
     url: "teatro"
     img: "teatro.jpg"
   - name: "Factory Home"
