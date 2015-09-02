@@ -13,7 +13,7 @@ proposte:
     url: "teatro"
     img: "teatro.jpg"
   - name: "Factory Home"
-    claim: "La vena glam dello stile Industrial"
+    claim: "La vena Glam dello stile Industrial"
     url: "factory_home"
     style: "content__item--double"
     img: "industrial.jpg"
