@@ -41,7 +41,7 @@ proposte:
     style: "content__item--double"
     img: "organic.jpg"
   - name: "Influenze Nipponiche"
-    claim: "Questo è un altro claim."
+    claim: "Un design moderno dal cuore antico"
     url: "giappone"
     style: "content__item--double"
     img: "giappone.jpg"
