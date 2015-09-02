@@ -7,4 +7,7 @@ $(document).ready( function() {
       gutter: '.content__gutter'
     }
   });
+  $('.content__wrapper').imagesLoaded().progress( function() {
+    $('.content__wrapper').isotole('layout');
+  });
 });
